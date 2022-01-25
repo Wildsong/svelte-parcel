@@ -1,3 +1,3 @@
 <div id="header">
-    This is a header.
+    svelte-parcel template
 </div>

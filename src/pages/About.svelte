@@ -1,4 +1,10 @@
 <div class="About">
-    <h1>About this app</h1>
-    This is the best most wonderful app I've ever written.
+    <p>
+        This template is for building apps based on the <a href="https://svelte.dev">Svelte framework</a> 
+        and the <a href="https://parceljs.org">Parcel</a> build tool.
+    </p>
+
+    <p>
+
+    </p>
 </div>
