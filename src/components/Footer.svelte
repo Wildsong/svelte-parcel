@@ -1,3 +1,4 @@
 <div id="footer">
-    This is a footer.
+    <hr>
+    <i>This template brought to you by Wildsong.</i>
 </div>

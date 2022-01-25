@@ -1,10 +1,7 @@
 <script>
 	import { Header, Footer, Button } from './components'
 	import { Router, Link, Route } from "svelte-routing"
-	import About from './pages/About.svelte'
-	import Home from './pages/Home.svelte'
-	const clatsop_county = [-123.75, 46.04];
-	const zoom = 9;
+	import { Home, About } from './pages'
 	export let url = '';
 </script>
 

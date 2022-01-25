@@ -37,3 +37,6 @@ npm run deploy
 Edit package.json to change the rsync
 command because you can't deploy to my server.
 
+## Resources
+
+At the moment I am relying heavily on the book "Practical Svelte" by Alex Libby.
