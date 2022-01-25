@@ -23,7 +23,7 @@
 			and the <a href="https://parceljs.org">Parcel</a> build tool.
 		</p>
 		<p>
-			Try this: <code>npx degit wildsong/svelte-parcel <i>your_new_project_name</i>/code>
+			Try this: <code>npx degit wildsong/svelte-parcel</code>
 		</p>
 	</div>
 

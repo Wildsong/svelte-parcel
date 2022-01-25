@@ -27,7 +27,6 @@
   "devDependencies": {
     "@babel/core": "^7.16.12",
     "@babel/preset-env": "^7.16.11",
-    "eslint": "^8.7.0",
     "parcel": "^2.2.1",
     "parcel-transformer-svelte": "^1.2.3",
     "svelte": "^3.0.0",
