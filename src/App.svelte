@@ -23,9 +23,6 @@
 		padding: 1em;
 		margin: 0 auto;
 	}
-	.footer {
-		width: 800px;
-	}
 	@media (min-width: 640px) {
 		main {
 			max-width: none;
