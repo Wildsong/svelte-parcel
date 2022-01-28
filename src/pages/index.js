@@ -1,3 +1,4 @@
 import Home from './Home.svelte'
 import About from './About.svelte'
-export { Home, About }
+import Login from './Login.svelte'
+export { Home, About, Login }
