@@ -1,21 +1,33 @@
 <script>
-    // I could not put a direct reference into the HTML section
-    // because of some unknown limitation of Parcel.
-    // Doing it this way preprocesses the file anyway so it's fine.
-    // This reduces the over-the-wire image size to 2% of its original size.
-    const imageUrl = new URL(
-        '../assets/babyturtle.png?as=jpeg&quality=50&width=300',
-        import.meta.url
+    import Auth, {init, browserStrategy, AuthorizationCodePKCE, addAuthHeader } from "@macfja/svelte-oauth2"
+
+    init(
+        browserStrategy,
+        new AuthorizationCodePKCE(
+            '$$github client id$$',
+            'http://localhost:1234/',
+            'https://github.com/oauth/token',
+            'https://github.com/oauth/authorize',
+            'http://localhost:1234/'
+        )
     )
+
+    let Username
+    const getUserName = () => {
+        addAuthHeader().then(headers => {
+            fetch('https://github.com/api/v4/user', { headers })
+            .then(response => response.json())
+            .then(response => username = response.username)
+        })
+    }
 </script>
 
-<div class="Login">
-    <img alt="Baby turtle" src="{imageUrl}">
+<Auth scopes={['read_user']} on:authenticated={getUserName}>
+    <div slot="loading">Loading...</div>
+    <div slot="error" let:error>{error.message}</div>
+    Hello {username}!
+</Auth>
 
-    <p>
-        Log in now or face the consequences.
-    </p>
-</div>
 
 <style>
 </style>

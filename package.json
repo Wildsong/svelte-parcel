@@ -34,7 +34,6 @@
     "svelte-routing": "^1.6.0"
   },
   "dependencies": {
-    "@macfja/svelte-oauth2": "^1.1.0",
     "ol": "^6.12.0",
     "ol-mapbox-style": "^6.8.3"
   }
