@@ -1,33 +1,30 @@
 <script>
-    import Auth, {init, browserStrategy, AuthorizationCodePKCE, addAuthHeader } from "@macfja/svelte-oauth2"
 
-    init(
-        browserStrategy,
-        new AuthorizationCodePKCE(
-            '$$github client id$$',
-            'http://localhost:1234/',
-            'https://github.com/oauth/token',
-            'https://github.com/oauth/authorize',
-            'http://localhost:1234/'
-        )
-    )
-
-    let Username
-    const getUserName = () => {
-        addAuthHeader().then(headers => {
-            fetch('https://github.com/api/v4/user', { headers })
-            .then(response => response.json())
-            .then(response => username = response.username)
-        })
-    }
 </script>
 
-<Auth scopes={['read_user']} on:authenticated={getUserName}>
-    <div slot="loading">Loading...</div>
-    <div slot="error" let:error>{error.message}</div>
-    Hello {username}!
-</Auth>
-
-
 <style>
+    .accordion{
+        background-color: aquamarine;
+    }
 </style>
+
+<section class="svelte-login">
+<div class="accordion">
+    <div id="login_form">
+        <h2>Sign in</h2>
+        <form>
+            <input type="hidden" id="oauth_state" name="oauth_state" value="">
+            <input type="hidden" id="authorize" name="authorize" value="true">
+            <input required id="username" type="text" name="username" placeholder="Username"><br/>
+            <input required id="password" type="password" name="password" placeholder="Password"><br />
+            <div class="flex">
+            <button id="signin" name="signin">Sign In</button>
+            </div>
+        </form>
+    </div>
+
+    <div>
+        <a href="forgotpassword">Forgot password?</a>
+    </div>
+</div>
+</section>
