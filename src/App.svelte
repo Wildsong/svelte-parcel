@@ -5,14 +5,20 @@
 	export let url = '';
 </script>
 
+<style>
+	#login {
+		float: right;
+	}
+</style>
+
 <Header/>
 
 <Router url="{url}">
 	<nav>
 		<Link to="/">Home</Link>
 		<Link to="/content">Content</Link>
-		<Link to="/login">Login</Link>
 		<Link to="/about">About</Link>
+		<div id="login"><Link to="/login">Login</Link></div>
 	</nav>
 	<main>
 		<Route path="/" component="{Home}" />
@@ -23,5 +29,3 @@
 </Router>
 <Footer/>
 
-<style>
-</style>
