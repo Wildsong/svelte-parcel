@@ -24,7 +24,8 @@ npm start
 Obviously this is not a full application so next you hang your own code on this framework.
 I do lots of map-based apps so I have sample OpenLayers code. You probably want to delete that.
 
-I am putting a navbar into the app right now, it's not done yet.
+I added a navbar. Now I will be adding OAUTH2 support.
+This project will probably never be done.
 
 ## Deploying to the web
 
