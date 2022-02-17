@@ -10,6 +10,7 @@
 </script>
 
 <div class="About">
+    <h1>About Wildsong</h1>
     <img alt="Baby turtle" src="{imageUrl}">
 
     <p>
