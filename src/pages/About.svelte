@@ -9,10 +9,11 @@
     )
 </script>
 
+why
+not
 <div class="About">
     <h1>About Wildsong</h1>
-    <img alt="Baby turtle" src="{imageUrl}">
-
+    <img alt="Logo" src="{imageUrl}" width=100 height=100>
     <p>
         This template is for building apps based on the <a href="https://svelte.dev">Svelte framework</a> 
         and the <a href="https://parceljs.org">Parcel</a> build tool.
