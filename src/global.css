@@ -16,6 +16,7 @@ body {
 	color: white;
 	background-color: grey;
 	padding: 5px;
+	font-size: 1.5em;
 }
 
 nav {
@@ -25,16 +26,16 @@ nav {
 }
 
 a {
-	color: rgb(105, 138, 105);
+	color: rgb(33, 73, 33);
 	text-decoration: none;
 }
 a:visited {
-	color: rgb(140, 182, 149);
+	color: rgb(95, 148, 106);
 	text-decoration: none;
 }
 
 a:hover {
-	background-color: rgb(222, 240, 240);
+	background-color: rgb(212, 238, 231);
 	text-decoration: none;
 }
 
