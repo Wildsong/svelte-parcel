@@ -78,6 +78,7 @@ button:focus {
 h1 {
     color: #272abb;
     text-transform: uppercase;
+	font-family: "Oswald";
     font-size: 18pt;
     font-weight: 100;
 }
