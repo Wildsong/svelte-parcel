@@ -8,10 +8,11 @@
     "openlayers",
     "ol6"
   ],
+  "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
+    "start": "parcel serve src/index.html",
     "lint": "eslint .",
-    "test": "parcel serve test.html --open",
-    "start": "parcel serve src/index.html --open",
+    "test": "parcel serve test.html",
     "build": "rm -rf dist && parcel build src/index.html --no-source-maps",
     "clean": "rm -rf dist node_modules",
     "deploy": "rsync -av dist/* -e 'ssh -p 2000' w6gkd.w6gkd.radio:2000:docker/nginx/html"
@@ -25,8 +26,6 @@
     "Brian H Wilson <brian@wildsong.biz>"
   ],
   "devDependencies": {
-    "@babel/core": "^7.16.12",
-    "@babel/preset-env": "^7.16.11",
     "parcel": "^2.2.1",
     "parcel-transformer-svelte": "^1.2.3",
     "sharp": "^0.29.3",
