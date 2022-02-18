@@ -5,11 +5,19 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Debug in Chrome",
             "type": "chrome",
             "request": "launch",
-            "name": "Launch chrome against dev server",
             "url": "http://localhost:1234",
-            "webRoot": "${workspaceFolder}"
+            "webRoot": "${workspaceFolder}",
+            "breakOnLoad": true,
+            "sourceMapPathOverrides": {
+                "../*": "${webRoot}/*"
+            },
+            "skipFiles": [
+                "${workspaceFolder}/node_modules/**/*.js",
+                "<node_internals>/**/*.js"
+            ]
         }
     ]
 }
