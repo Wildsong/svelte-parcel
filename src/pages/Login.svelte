@@ -25,10 +25,8 @@
             data[k] = v;
         }
         if (!validation(data)) {
-        
         } else {
             alert_message = "You are logged in."
-            alert("You are now logged in.");
         }
     }
 </script>
@@ -45,9 +43,11 @@
                 <div class="alert-message" id="error-message">{alert_message}</div>
                 <input type="hidden" id="oauth_state" name="oauth_state" value="">
                 <input type="hidden" id="authorize" name="authorize" value="true">
+                
                 <input required type="text" name="username" placeholder="Username"><br/>
                 <input required type="password" name="password" placeholder="Password"><br />
-                <button type="submit" id="signin-button" name="signin">Sign In</button>
+                
+                <button type="submit" id="signin-button" name="signin">Sign in</button>
             </fieldset>
         </form>
         <div>

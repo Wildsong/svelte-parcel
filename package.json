@@ -33,7 +33,12 @@
     "svelte-routing": "^1.6.0"
   },
   "dependencies": {
+    "cors": "^2.8.5",
+    "crocks": "^0.12.4",
+    "express": "^4.17.3",
+    "google-auth-library": "^7.12.0",
     "ol": "^6.12.0",
-    "ol-mapbox-style": "^6.8.3"
+    "ol-mapbox-style": "^6.8.3",
+    "ramda": "^0.28.0"
   }
 }

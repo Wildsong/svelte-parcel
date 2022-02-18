@@ -1,8 +1,10 @@
 import App from './App.svelte';
-import verify from './verify.js'
 
 const app = new App({
-	target: document.body
+	target: document.body,
+	props: {
+		name: 'world'
+	}
 });
 
 export default app;
