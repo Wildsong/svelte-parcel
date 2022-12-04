@@ -10,6 +10,7 @@
             "request": "launch",
             "url": "http://localhost:1234",
             "webRoot": "${workspaceFolder}",
+            "breakOnLoad": true,
             "sourceMapPathOverrides": {
                 "../*": "${webRoot}/*"
             },
@@ -17,6 +18,13 @@
                 "${workspaceFolder}/node_modules/**/*.js",
                 "<node_internals>/**/*.js"
             ]
+        },
+        {
+            "name": "Docker Node.js Launch",
+            "type": "docker",
+            "request": "launch",
+            "preLaunchTask": "docker-run: debug",
+            "platform": "node"
         }
     ]
 }
