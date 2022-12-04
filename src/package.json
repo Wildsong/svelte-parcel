@@ -1,0 +1,44 @@
+{
+  "name": "svelte-parcel",
+  "version": "0.1.0",
+  "description": "Svelte template bundled by Parcel",
+  "keywords": [
+    "svelte",
+    "parcel",
+    "openlayers",
+    "ol6"
+  ],
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "start": "parcel serve index.html",
+    "lint": "eslint .",
+    "test": "parcel serve test.html",
+    "build": "rm -rf dist && parcel build index.html --no-source-maps",
+    "clean": "rm -rf dist node_modules",
+    "deploy": "rsync -av dist/* -e 'ssh -p 2000' w6gkd.w6gkd.radio:2000:docker/nginx/html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Wildsong/svelte-parcel.git"
+  },
+  "license": "MIT",
+  "contributors": [
+    "Brian H Wilson <brian@wildsong.biz>"
+  ],
+  "dependencies": {
+    "cors": "^2.8.5",
+    "crocks": "^0.12.4",
+    "express": "^4.17.3",
+    "google-auth-library": "^7.12.0",
+    "ol": "^6.12.0",
+    "ol-mapbox-style": "^6.8.3",
+    "ramda": "^0.28.0",
+    "sharp": "^0.31.1"
+  },
+  "devDependencies": {
+    "parcel": "^2.8.0",
+    "parcel-transformer-svelte": "^1.2.3",
+    "svelte": "^3.53.1",
+    "svelte-routing": "^1.6.0"
+  }
+}
