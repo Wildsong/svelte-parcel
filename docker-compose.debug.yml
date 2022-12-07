@@ -1,8 +1,9 @@
-version: '3.4'
+version: '3.7'
 
 services:
-  svelteparcel:
-    image: svelteparcel
+  svelte:
+    container_name: svelte
+    image: svelte
     build:
       context: .
       dockerfile: ./Dockerfile

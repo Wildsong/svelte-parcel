@@ -1,8 +1,9 @@
 version: '3.7'
 
 services:
-  svelteparcel:
-    image: svelteparcel
+  svelte:
+    container_name: svelte-production
+    image: svelte
     build:
       context: .
       dockerfile: ./Dockerfile
@@ -11,6 +12,6 @@ services:
     ports:
       - 1234:1234
     volumes:
-      - ./src:/srv:ro
+      - ./src:/srv:rw
 
       

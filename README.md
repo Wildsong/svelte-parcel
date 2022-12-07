@@ -1,5 +1,7 @@
 # svelte-parcel
+
 A template for creating apps based on Svelte and Parcel.
+It runs in a Docker container.
 
 ## Use it as a template
 
@@ -12,12 +14,12 @@ npx degit Wildsong/svelte-parcel
 ```
 
 Install the dependencies.
-Then start it. This should automatically open a browser and connect it to http://localhost:1234
+Then start it. 
 
 ```bash
-npm install
-npm start
+docker-compose --file=docker-compose.debug.yml up
 ```
+
 # OAUTH
 
 I am adding support for logging in over OAUTH because every project I have in mind needs this.
