@@ -1,7 +1,5 @@
 echo "Installing parcel and friends"
-yarn add --dev parcel \
-  parcel-transformer-svelte \
-  svelte svelte-routing
+yarn add --dev typescript parcel parcel-transformer-svelte svelte svelte-routing
 
 echo "Installing project packages"
 yarn install
