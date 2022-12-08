@@ -6,7 +6,7 @@
     "svelte",
     "parcel",
     "openlayers",
-    "ol6"
+    "ol7"
   ],
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
@@ -30,8 +30,8 @@
     "crocks": "^0.12.4",
     "express": "^4.17.3",
     "google-auth-library": "^7.12.0",
-    "ol": "^6.12.0",
-    "ol-mapbox-style": "^6.8.3",
+    "ol": "^7.1.0",
+    "ol-mapbox-style": "^9.2.4",
     "ramda": "^0.28.0",
     "sharp": "^0.31.1"
   },
@@ -39,6 +39,7 @@
     "parcel": "^2.8.0",
     "parcel-transformer-svelte": "^1.2.3",
     "svelte": "^3.54.0",
-    "svelte-routing": "^1.6.0"
+    "svelte-routing": "^1.6.0",
+    "typescript": "^4.9.3"
   }
 }
