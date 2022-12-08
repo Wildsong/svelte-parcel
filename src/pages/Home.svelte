@@ -5,7 +5,7 @@
 	const zoom = 9;
 </script>
 
-<h1>Here's a map</h1>
+<h1>Here is a map</h1>
 
 Every app needs a map.
 

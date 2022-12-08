@@ -8,7 +8,7 @@
         defaults as defaultInteractions
     } from 'ol/interaction'
     import { fromLonLat } from 'ol/proj'
-    
+
     //props 
     export let center;
     export let zoom;

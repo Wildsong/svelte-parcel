@@ -3,7 +3,7 @@
 
 <div class="Content">
     <p>
-Here there be content
+Here there will be content without a map.
     </p>
 </div>
 
