@@ -14,13 +14,13 @@ npx degit Wildsong/svelte-parcel
 ```
 
 Install the dependencies.
-Then start it. 
+Then start it.
 
 ```bash
 docker-compose --file=docker-compose.debug.yml up
 ```
 
-# OAUTH
+## OAUTH
 
 I am adding support for logging in over OAUTH because every project I have in mind needs this.
 
