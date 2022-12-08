@@ -1,9 +1,10 @@
 # Build and Release Folders
-node_modules/
-dist/
-.parcel-cache/
+**/node_modules/
+**/.parcel-cache/
 
 # Other files and folders
+src/yarn.lock
 
 # Executables
+**/dist/
 
