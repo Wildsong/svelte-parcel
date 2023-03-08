@@ -1,4 +1,4 @@
-FROM node:lts-alpine
+FROM node:19-alpine
 ENV NODE_ENV=production
 
 # Inherit the "node" user from the parent image

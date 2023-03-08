@@ -2,6 +2,5 @@
 </style>
 
 <button on:click>
-here's a button
-<slot/>
+<slot>Button</slot>
 </button>
